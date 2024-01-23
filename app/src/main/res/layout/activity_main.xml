@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="688dp"
+        android:layout_height="264dp"
+        android:text=" Account"
+        android:textColor="#F10A0A"
+        android:textSize="180sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="885dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/custom_name"
+        app:backgroundTint="@null"
+        android:hint="Email address"
+        android:textColorHint="@color/white"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="857dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/custom_name"
+        app:backgroundTint="@null"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="447dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/custom"
+        android:text="Login"
+        android:textSize="90sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
